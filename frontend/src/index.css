@@ -1,0 +1,25 @@
+.delete-icon {
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.delete-icon:hover {
+  color: #dc3545; /* bootstrap's "danger" red */
+}
+
+.edit-icon {
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+
+.edit-icon:hover {
+  color: #452ccf; /* bootstrap's "danger" red */
+}
+
+.expand-icon {
+  cursor: pointer;
+  transition: color 0.15s ease;
+}
+.expand-icon:hover {
+  color: hsl(130, 65%, 49%); /* bootstrap's "danger" red */
+}
