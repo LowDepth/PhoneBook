@@ -36,14 +36,6 @@ const App = () => {
           `${nameObject.name} is already on the phonebook, replace the old number with the new one?`,
         )
       ) {
-        // IF THE NAME IS ALREADY ON THE LIST IT WILL ASK IF YOU WANT TO CHANGE THE NUMBER
-        //
-        //
-        //
-        //
-        //
-        //
-
         const personToUpdate = persons.find(
           (n) => n.name.toLowerCase() === newName.toLowerCase(),
         );
@@ -68,8 +60,6 @@ const App = () => {
             }, 5500);
           });
       }
-
-      //alert(`${newName} is already added to phonebook`);
     } else {
       phoneListService
         .create(nameObject)
@@ -116,7 +106,7 @@ const App = () => {
 
   return (
     <>
-      <div className="container d-flex flex-column justify-content-center align-items-center mt-3">
+      <div className="container d-flex flex-column justify-content-center align-items-center mt-3 px-3">
         <h1>The Phone Book</h1>
       </div>
 

@@ -8,7 +8,7 @@ const NumberCard = ({
   return (
     <>
       <div className="container d-flex justify-content-center align-items-center">
-        <div className="card p-4 mt-3" style={{ minWidth: "800px" }}>
+        <div className="card p-4 mt-3 w-100" style={{ maxWidth: "800px" }}>
           <h2 className="d-flex justify-content-center align-items-center">
             Number List
           </h2>
@@ -24,9 +24,9 @@ const NumberCard = ({
             {filteredPersons.map((person) => (
               <li
                 key={person.id}
-                className="list-group-item d-flex justify-content-between align-items-center"
+                className="list-group-item d-flex justify-content-between align-items-center flex-wrap gap-2"
               >
-                <span>
+                <span className="me-auto">
                   {person.name} - {person.number}
                 </span>
                 <span className="d-flex gap-2">

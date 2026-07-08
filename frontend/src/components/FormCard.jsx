@@ -13,7 +13,7 @@ const FormCard = ({
   return (
     <>
       <div className="container d-flex justify-content-center align-items-center">
-        <div className="card p-4 mt-3" style={{ minWidth: "800px" }}>
+        <div className="card p-4 mt-3 w-100" style={{ maxWidth: "800px" }}>
           <form onSubmit={addName}>
             <div className="mb-3">
               <label htmlFor="name" className="form-label">
